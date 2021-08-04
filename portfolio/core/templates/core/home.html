@@ -1,0 +1,26 @@
+{% extends 'core/base.html' %}
+{% load static %}
+{% block content %} 
+<div class="mt-5">
+ <div class="text-center">
+  <img src="{% static 'core/images/portfolio.jpg' %}" alt="ProfilePic" class="img-thumbnail" width="250px" height="150px">
+ </div>
+ <div class="mt-5 text-white mx-5 text-justify">
+  <h1 class="font-weight-bold st-font">Hello,</h1>
+  <div class="px-4" style="line-height:2rem;">
+   <p style="text-indent:100px;"> I am <b class="text-warning">Amit Kumar Pathak</b> having 1 years of Data Scientist and Software developer experience for global businesses, I offer the technical expertise you are seeking for your Data Science, Machine Learning or Software developer position.</p>
+   <p>Since earning my bachelor’s degree Computer Science from Jaipur National University, I have served as a Data Scientist and Software developer at <b class="text-warning">Strivemindz</b>, one of biggest premier Consulting and Software Development firm. In this position, I have to participate in  software development and analytics projects for clients in diverse industries including technology, manufacturing, pharmaceutical, hospitality, retail and financial services.</p>
+   <p>Before Strivemindz i have been served as Data Scientist in various organization such as Adhoc Networks, Jaipur, The Spark Foundation and DP Neurotech.</p>
+   <p>Since i am from class of 2021, so i am started my work durring my college period</p>
+  </div>
+ </div>
+<div class="resume">
+    <h1 class="ss-color">Resume</h1>
+    <embed src= "{%static 'core/images/Amit_resume2.pdf' %}" type="application/pdf" width="100%" height="600px" />
+</div>
+ <div class="text-center">
+  <a href="{% url 'contact' %}" class="btn btn-outline-warning my-3 mr-5">Hire Me</a>
+  <a href="{% url 'contact' %}" class="btn btn-outline-info my-3">Contact</a>
+ </div>
+</div>
+{% endblock content %}
